@@ -5,9 +5,10 @@ application. Supply an API URL, a scoped machine token, the application ID and a
 JSON array of service names. You can also update images, environment variables
 and existing secret bindings for those services.
 
-Release distribution: [hakopod/deploy](https://github.com/hakopod/deploy). The
-`@v1` examples follow compatible releases in that major version. For production
-workflows, pin a full, reviewed release commit SHA for immutable action code.
+This action is maintained and released in
+[hakopod/deploy](https://github.com/hakopod/deploy). The `@v1` examples follow
+compatible releases in that major version. For production workflows, pin a
+full, reviewed release commit SHA for immutable action code.
 
 ## Add a deployment step
 
@@ -192,3 +193,9 @@ Check that deployment before starting a replacement run.
 
 The action uses the same `/api/v1` API as the dashboard and CLI. See
 [CI API access](https://github.com/hakopod/hakopod/blob/main/docs/ci-api.md) for endpoint and token setup.
+
+## Contributing and releases
+
+Make action changes directly in this repository. Run `npm test` with Node.js 24
+and open a pull request. See the [maintainer release guide](RELEASING.md) for CI,
+review, version tags and GitHub Marketplace publication.
